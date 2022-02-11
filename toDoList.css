@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka One', cursive;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e22e65), to(#37adcd));
+  background-image: linear-gradient(to right, #e22e65, #37adcd);
+  color: white;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.container .nav h2 {
+  font-size: 2rem;
+}
+
+.container .user-input {
+  width: 350px;
+  text-align: center;
+}
+
+.container .user-input button {
+  cursor: pointer;
+  padding: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  outline: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #a5dd3c;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.container .user-input button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.container .user-input #input {
+  width: 80%;
+  outline: none;
+  padding: 8px;
+  border: 1px solid lightgray;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+.container .user-input #input:focus {
+  -webkit-box-shadow: 0 0 5px #e22865;
+          box-shadow: 0 0 5px #e22865;
+  border: 3px solid #e22865;
+  -webkit-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+.container .to-Do-items {
+  width: 500px;
+  margin: auto;
+}
+
+.container .to-Do-items .item {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  padding: 16px;
+  color: #454545;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.container .to-Do-items .item div {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  padding: 16px;
+  color: #454545;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.container .to-Do-items .item i {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.container .to-Do-items .item:hover {
+  -webkit-box-shadow: 0 0 20px #e22865;
+          box-shadow: 0 0 20px #e22865;
+  border: 3px solid #e22865;
+  -webkit-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav h2 {
+    margin: 10px 0;
+  }
+  .nav .user-input {
+    width: 100%;
+  }
+  .to-Do-items {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .user-input input {
+    width: 74%;
+  }
+}
+
+@media (max-width: 320px) {
+  .user-input input {
+    width: 60%;
+  }
+}
+
+/*.nav {
+    display: flex; // here we define the flex property in order for us to display better the bavigation bar 
+    justify-content: space-between; // with this property we are giving an space in between to our nav elements for them to look nicer 
+    flex-wrap: wrap; // the flex wrap CSS property allow us to indicate to the machine how we want certain elements inside our flex container to be displayed and organized inside the space 
+    width: 100%;
+    margin: 25px 0;
+    h2 {
+        font-size: 2rem;
+    }
+}*/
+/*# sourceMappingURL=toDoList.css.map */

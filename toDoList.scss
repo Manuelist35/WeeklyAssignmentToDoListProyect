@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); // in this line we are adding one font family which we got from the Google Fonts API in order to give more style to our design.
+
+*{
+    padding: 0; // with this we are deleting the default padding for later be able to style it in our own way 
+    margin: 0; // with this we are deleting the default margin
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka One', cursive; // here we are selecting the font family that we are gonna use inside the body element
+    background-image: linear-gradient(to right, #e22e65, #37adcd); // and in this line we are defining an style that looks cool beacuse it shows the different tones between the given colors.
+    color: white;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    .nav {
+        display: flex; // here we define the flex property in order for us to display better the bavigation bar 
+        justify-content: space-between; // with this property we are giving an space in between to our nav elements for them to look nicer 
+        flex-wrap: wrap; // the flex wrap CSS property allow us to indicate to the machine how we want certain elements inside our flex container to be displayed and organized inside the space 
+        width: 100%;
+        margin: 25px 0;
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    .user-input{
+        width: 350px;
+        text-align: center;
+        button {
+            cursor: pointer;
+            padding: 8px;
+            width: fit-content; // here we are defining this property to fit-auto in order to automtically fit the width of its container to give it a more stylish look
+            outline: none;
+            transition: 1s;
+            background-color: #a5dd3c;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            &:hover {
+                background-color: transparent;
+                color: white;
+            }
+          }
+        #input {
+            width: 80%;
+            outline: none;
+            padding: 8px;
+            border: 1px solid lightgray;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 0.30s ease-in-out;
+            -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+            &:focus{
+                box-shadow: 0 0 5px #e22865;
+                border: 3px solid #e22865;
+                -webkit-transition: all 0.30s ease-in-out;
+                -moz-transition: all 0.30s ease-in-out;
+                -ms-transition: all 0.30s ease-in-out;
+                -o-transition: all 0.30s ease-in-out;
+                transition: all 0.30s ease-in-out;
+            }
+        }
+    }
+    .to-Do-items{
+        width: 500px;
+        margin: auto;
+        /*.item{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+            padding: 16px;
+            color: #454545;
+            margin-top: 10px;
+            font-size: 1rem;
+            text-transform: uppercase; // with this property we are telling the computer to cnvert anything the user input from lowcase to  uppercase 
+             */
+        div {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+            padding: 16px;
+            color: #454545;
+            margin-top: 10px;
+            font-size: 1rem;
+            text-transform: uppercase; // with this property we are telling the computer to cnvert anything the user input from lowcase to  uppercase 
+            }
+            i {
+                cursor: pointer;
+                margin: 0 5px;
+            }
+            &:hover{
+                box-shadow: 0 0 20px #e22865;
+                border: 3px solid #e22865;
+                -webkit-transition: all 0.30s ease-in-out;
+                -moz-transition: all 0.30s ease-in-out;
+                -ms-transition: all 0.30s ease-in-out;
+                -o-transition: all 0.30s ease-in-out;
+                transition: all 0.30s ease-in-out;
+            }
+        }
+    }
+
+
+@media (max-width: 768px) {
+    .nav{
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            margin: 10px 0;
+        }
+        .user-input {
+            width: 100%;
+
+        }
+    }
+    .to-Do-items {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .user-input{
+        input {
+            width: 74%;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .user-input{
+        input {
+            width: 60%;
+        }
+    }
+}
+
+/*.nav {
+    display: flex; // here we define the flex property in order for us to display better the bavigation bar 
+    justify-content: space-between; // with this property we are giving an space in between to our nav elements for them to look nicer 
+    flex-wrap: wrap; // the flex wrap CSS property allow us to indicate to the machine how we want certain elements inside our flex container to be displayed and organized inside the space 
+    width: 100%;
+    margin: 25px 0;
+    h2 {
+        font-size: 2rem;
+    }
+}*/
